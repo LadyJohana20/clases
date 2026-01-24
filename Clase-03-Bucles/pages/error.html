@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página no encontrada - 404</title>
+    <link href="../bootstrap-compilado/bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .error-container {
+            text-align: center;
+            color: white;
+            animation: fadeIn 0.8s ease-in;
+        }
+        
+        .error-code {
+            font-size: 150px;
+            font-weight: bold;
+            line-height: 1;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            animation: bounce 2s infinite;
+        }
+        
+        .error-image {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            margin: 20px 0;
+            filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.2));
+        }
+        
+        .error-title {
+            font-size: 48px;
+            font-weight: bold;
+            margin: 20px 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .error-description {
+            font-size: 20px;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+        
+        .btn-custom {
+            padding: 12px 30px;
+            font-size: 18px;
+            font-weight: 600;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            margin: 10px;
+        }
+        
+        .btn-home {
+            background-color: white;
+            color: #667eea;
+        }
+        
+        .btn-home:hover {
+            background-color: #f0f0f0;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn-contact {
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+        
+        .btn-contact:hover {
+            background-color: white;
+            color: #667eea;
+            transform: translateY(-3px);
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <!-- Número de error con animación -->
+        <div class="error-code">404</div>
+        
+        <!-- Imagen de error (usando SVG) -->
+        <svg class="error-image" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+            <!-- Fondo del círculo -->
+            <circle cx="200" cy="150" r="120" fill="rgba(255, 255, 255, 0.1)" stroke="white" stroke-width="3"/>
+            
+            <!-- Signo de interrogación grande -->
+            <text x="200" y="180" font-size="100" font-weight="bold" text-anchor="middle" fill="white" font-family="Arial">?</text>
+            
+            <!-- Línea ondulada decorativa -->
+            <path d="M 80 250 Q 120 260, 160 250 T 240 250 T 320 250" stroke="white" stroke-width="2" fill="none" opacity="0.6"/>
+        </svg>
+        
+        <!-- Título -->
+        <h1 class="error-title">¡Página no encontrada!</h1>
+        
+        <!-- Descripción -->
+        <p class="error-description">
+            Lo sentimos, la página que buscas no existe o ha sido movida.
+        </p>
+        
+        <!-- Botones de acción -->
+        <div class="button-group">
+            <a href="../index.html" class="btn btn-custom btn-home">
+                <i class="bi bi-house-fill"></i> Volver al inicio
+            </a>
+            
+        </div>
+    </div>
+
+    <script src="../bootstrap-compilado/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

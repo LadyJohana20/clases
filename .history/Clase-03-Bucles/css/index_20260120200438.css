@@ -1,0 +1,34 @@
+.productos{
+    display: flex;/* ordena de forma flexible a sus elementos hijos */
+    flex-direction: column; /* los ordena en columna */
+    flex-direction: row; /* los ordena en fila */
+    flex-wrap: nowrap; /* no permite que los elementos hijos hagan un salto de linea */
+    flex-wrap: wrap; /* permite que los elementos hijos hagan un salto de linea */
+
+
+}
+
+img{
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { background-color: lightblue;  }
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) { background-color: green;  }
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { background-color: yellow;  }
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) { background-color: orange;  }
+
+// X-Large devices (large desktops, less than 1400px)
+@media (max-width: 1399.98px) { background-color: purple;  }
+
+// XX-Large devices (larger desktops)
+// No media query since the xxl breakpoint has no upper bound on its width
