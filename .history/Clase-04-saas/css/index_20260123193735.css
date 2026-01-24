@@ -1,0 +1,18 @@
+/* 1. en saas podemos generar variables */
+/* 2. Utilizamos las variables en los estilos */
+body {
+  background-color: #f4f4f4;
+  color: #3498db;
+  font-family: "Arial, sans-serif";
+  margin: 0;
+  padding: 20px;
+}
+
+p {
+  font-family: "Arial, sans-serif";
+  color: rgb(33.1380753138, 125.1882845188, 186.8619246862);
+}
+
+li {
+  margin-bottom: 10px;
+}

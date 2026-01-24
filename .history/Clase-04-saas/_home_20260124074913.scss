@@ -1,0 +1,15 @@
+/* 2. Utilizamos las variables en los estilos */
+body {
+  background-color: $color-de-fondo;
+  color: $color-de-texto;
+  font-family: $fuente-principal;
+  margin: 0;
+  padding: 20px;
+}
+p {
+  font-family: $fuente-principal;
+  color: darken($color-de-texto, 10%);
+}
+li {
+  margin-bottom: 10px;
+}
