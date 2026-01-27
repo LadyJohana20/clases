@@ -14,18 +14,24 @@ const loginUser = (e) => {
     //capturar los datos del formulario
     let email = document.getElementById('email').value;
     let password = document.getElementById('password').value;
-    let adminName = "Juan Perez";
+    
+    let login = "";
+  
     //crear el objeto con los datos
     let adminUser= "admin@bootcamp.com";
     let adminPassword= "admin123";
+      let adminName = "Juan Perez";
 
     //creamos logica de validación
 
     if(email === adminUser && password === adminPassword){
         console.log("Login exitoso");
+        login = "true"; //si es login exitoso
 
         //guardar el nombre del usuario en el localStorage
         localStorage.setItem("administrador", adminName);
+        localStorage.setItem("email", email);
+        localStorage.setItem("loginStatus", login);
         alert("Login exitoso");
 
 
@@ -34,6 +40,10 @@ const loginUser = (e) => {
 
     } else {
         console.log("Credenciales Invalidas");
+        login = "false";   //si el login falla 
+
+        //guardar el estado de login en el localStorage
+        localStorage.setItem("loginStatus", login);
         alert("Credenciales Invalidas, por favor intente nuevamente.");
 
         }
