@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon index.js",
-    "sass": "sass public/sass:public/css",
+    "sass": "scss sass: css index.css",
     "dev": "nodemon index.js"
   },
   "keywords": [],
@@ -14,7 +14,6 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "express": "^5.2.1",
     "sass": "^1.97.3"
   },
   "devDependencies": {
