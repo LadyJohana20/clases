@@ -1,0 +1,6 @@
+ 
+{
+    "watch": ["*.html", "*.css", "*.scss", "*.js", "*.cjs", "*.mjs"],
+    "ext": "html css scss js",
+    "ignore": ["node_modules/*", "**/tests/*"]
+}

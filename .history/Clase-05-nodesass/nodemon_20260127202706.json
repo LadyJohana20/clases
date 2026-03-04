@@ -1,0 +1,12 @@
+/* 
+archivo de configuracion para nodemon
+1. creamos el archivo nodemon.json en la raiz del proyecto
+*/
+
+/* 2. configuramos para que resetee con .html .css .scss*/
+{
+    "watch": ["*.html", "*.css", "*.scss", "src/"],
+    "ext": "html css scss js",
+    "ignore": ["node_modules/*"],
+    
+}
